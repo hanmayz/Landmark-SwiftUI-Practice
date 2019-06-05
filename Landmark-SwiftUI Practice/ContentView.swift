@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct ContentView : View {
-    
     // MARK: - UI
+    
     // `some` represents [opaque result types](https://github.com/apple/swift-evolution/blob/master/proposals/0244-opaque-result-types.md)
     var body: some View {
         // VStack default: content and axis centered, context-appropriate spacing
