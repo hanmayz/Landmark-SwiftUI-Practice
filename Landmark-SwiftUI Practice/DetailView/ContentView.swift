@@ -12,7 +12,7 @@ struct ContentView : View {
     // MARK: - UI
     
     var body: some View {
-        // `some` represents [opaque result types](https://github.com/apple/swift-evolution/blob/master/proposals/0244-opaque-result-types.md)
+        // `some` represents opaque result types](https://github.com/apple/swift-evolution/blob/master/proposals/0244-opaque-result-types.md)
         
         // VStack default: content and axis centered, context-appropriate spacing
         VStack {
