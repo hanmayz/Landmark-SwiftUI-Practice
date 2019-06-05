@@ -10,6 +10,10 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
+    // To use UIView subclasses from within SwiftUI,
+    // 1. wrap the view in a SwiftUI view and
+    // 2. conform to `UIViewRepresentable`
+    
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
