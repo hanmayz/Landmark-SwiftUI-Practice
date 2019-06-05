@@ -13,9 +13,19 @@ struct ContentView : View {
     // MARK: - UI
     // `some` represents [opaque result types](https://github.com/apple/swift-evolution/blob/master/proposals/0244-opaque-result-types.md)
     var body: some View {
-        Text("Turtle Rock")
-            .font(.title) // `.font()` is a modifier
-            .color(.green) // `.color()` is a modifier
+        // VStack default: content and axis centered, context-appropriate spacing
+        VStack(alignment: .leading) {
+            Text("Turtle Rock") // `Text()` text view's initializer
+                .font(.title) // `.font()` is a modifier
+                HStack {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer() // fills missing space between two Text views
+                    Text("California")
+                        .font(.subheadline)
+                }
+        }
+        .padding() // UIEdgeInsets equivalent
     }
 }
 
