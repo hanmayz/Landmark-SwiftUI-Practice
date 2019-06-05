@@ -18,7 +18,7 @@ struct ContentView : View {
         VStack {
             MapView()
                 .frame(height: 300) // when only specify the `height`, `width` by default == SwiftUI view's content.width
-                .edgesIgnoringSafeArea(.top) // equivalent to contentInset.top = -AppConstants.statusBarHeight
+                .edgesIgnoringSafeArea(.top) // equivalent to contentInset.top = -statusBarHeight
             
             CircleImage()
                 .offset(y: -130) // equivalent to contentOffset.y = -130
